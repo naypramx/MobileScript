@@ -42,7 +42,538 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.Position = UDim2.new(0.0180660263, 0, 0.226925805, 0)
 TextLabel.Size = UDim2.new(0.531657398, 0, 0.156326666, 0)
-TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Font = Enum.Font.SourceSans-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local CoolGui = Instance.new("ScreenGui")
+local Fame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local AutoFarm = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local AutoFarmBar = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local True = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local False = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local Bar = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local TextButton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+
+--Properties:
+
+CoolGui.Name = "CoolGui"
+CoolGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+CoolGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Fame.Name = "Fame"
+Fame.Parent = CoolGui
+Fame.BackgroundColor3 = Color3.fromRGB(17, 255, 0)
+Fame.Position = UDim2.new(0.232999474, 0, 0.208648652, 0)
+Fame.Size = UDim2.new(0.218239322, 0, 0.21837838, 0)
+
+UICorner.Parent = Fame
+
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = Fame
+AutoFarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarm.BackgroundTransparency = 1.000
+AutoFarm.Position = UDim2.new(0.069114469, 0, 0.12442667, 0)
+AutoFarm.Size = UDim2.new(0.422705323, 0, 0.168316826, 0)
+AutoFarm.Font = Enum.Font.GothamSemibold
+AutoFarm.Text = "Auto-Farm"
+AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarm.TextScaled = true
+AutoFarm.TextSize = 22.000
+AutoFarm.TextStrokeTransparency = 0.000
+AutoFarm.TextWrapped = true
+
+UITextSizeConstraint.Parent = AutoFarm
+UITextSizeConstraint.MaxTextSize = 34
+
+AutoFarmBar.Name = "AutoFarmBar"
+AutoFarmBar.Parent = Fame
+AutoFarmBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarmBar.Position = UDim2.new(0.68127948, 0, 0.153465346, 0)
+AutoFarmBar.Size = UDim2.new(0.181159422, 0, 0.138613865, 0)
+
+UICorner_2.Parent = AutoFarmBar
+
+True.Name = "True"
+True.Parent = AutoFarmBar
+True.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+True.Size = UDim2.new(0.373333335, 0, 1, 0)
+True.Font = Enum.Font.SourceSans
+True.Text = ""
+True.TextColor3 = Color3.fromRGB(0, 0, 0)
+True.TextScaled = true
+True.TextSize = 14.000
+True.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(8, 8)
+UICorner_3.Parent = True
+
+UITextSizeConstraint_2.Parent = True
+UITextSizeConstraint_2.MaxTextSize = 14
+
+False.Name = "False"
+False.Parent = AutoFarmBar
+False.BackgroundColor3 = Color3.fromRGB(145, 255, 0)
+False.Position = UDim2.new(0.626666665, 0, 0, 0)
+False.Size = UDim2.new(0.373333335, 0, 1, 0)
+False.Visible = false
+False.Font = Enum.Font.SourceSans
+False.Text = ""
+False.TextColor3 = Color3.fromRGB(0, 0, 0)
+False.TextScaled = true
+False.TextSize = 14.000
+False.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(8, 8)
+UICorner_4.Parent = False
+
+UITextSizeConstraint_3.Parent = False
+UITextSizeConstraint_3.MaxTextSize = 14
+
+Bar.Name = "Bar"
+Bar.Parent = CoolGui
+Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bar.Position = UDim2.new(0.232999474, 0, 0.172972977, 0)
+Bar.Size = UDim2.new(0.218239322, 0, 0.0464864857, 0)
+
+UICorner_5.Parent = Bar
+
+TextLabel.Parent = Bar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0.862318814, 0, 1, 0)
+TextLabel.Font = Enum.Font.PatrickHand
+TextLabel.Text = "NAYPRAMX HUB Blox Fruit Scripts [World 1] Mobile"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint_4.Parent = TextLabel
+UITextSizeConstraint_4.MaxTextSize = 30
+
+TextButton.Parent = Bar
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton.Position = UDim2.new(0.862438858, 0, 0, 0)
+TextButton.Size = UDim2.new(0.135265693, 0, 1, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_6.Parent = TextButton
+
+UITextSizeConstraint_5.Parent = TextButton
+UITextSizeConstraint_5.MaxTextSize = 14
+
+-- Scripts:
+
+local function BACINOS_fake_script() -- True.LocalScript 
+	local script = Instance.new('LocalScript', True)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Visible = false
+		script.Parent.Parent.False = true
+	end)
+end
+coroutine.wrap(BACINOS_fake_script)()
+local function HVILUJ_fake_script() -- True.LocalScript 
+	local script = Instance.new('LocalScript', True)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.farm = true
+	
+		while _G.farm do wait()
+			pcall(function()
+				local MyLevel = game.Players.LocalPlayer.Data.Level.Value
+				for i,v in pairs(game:GetService("Workspace").Enemies:GetDescendants()) do
+					if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
+						if MyLevel == 1 or MyLevel <= 9 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1055.3137207031, 16.362735748291, 1558.8653564453)
+							Mon = "Bandit [Lv. 5]"
+							wait(1.5)
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "BanditQuest1", 1)
+						elseif MyLevel == 10 or MyLevel <= 14 then 
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1616.9991455078, 36.852085113525, 144.3754119873)
+							Mon = "Monkey [Lv. 14]"
+							wait(1.5)
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "JungleQuest", 1)
+						elseif MyLevel == 15 or MyLevel <= 29 then -- Gorilla
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1616.9991455078, 36.852085113525, 144.3754119873)
+							Mon = "Gorilla [Lv. 20]"
+							wait(1.5)
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "JungleQuest", 2)
+						elseif MyLevel == 30 or MyLevel <= 39 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1151.4538574219, 4.5402708053589, 3830.6535644531)
+							wait(1.5)
+							Mon = "Pirate [Lv. 35]"
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "BuggyQuest1", 1)
+						elseif MyLevel == 40 or MyLevel <= 59 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1151.4538574219, 4.5402708053589, 3830.6535644531)
+							wait(1.5)
+							Mon = "Brute [Lv. 45]"
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "BuggyQuest1", 2)
+						elseif MyLevel == 60 or MyLevel <= 74 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(902.89453125, 6.513249874115, 4381.9609375)
+							wait(1.5)
+							Mon = "Desert Bandit [Lv. 60]"
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "DesertQuest", 1)
+						elseif MyLevel == 75 or MyLevel <= 89 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(902.89453125, 6.513249874115, 4381.9609375)
+							wait(1.5)
+							Mon = "Desert Officer [Lv. 70]"
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "DesertQuest", 2)
+						elseif MyLevel == 90 or MyLevel <= 99 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1375.642578125, 87.272789001465, -1297.5194091797)
+							wait(1.5)
+							Mon = "Snow Bandit [Lv. 90]"
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "SnowQuest", 1)
+						elseif MyLevel == 100 or MyLevel <= 119 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1375.642578125, 87.272789001465, -1297.5194091797)
+							wait(1.5)
+							Mon = "Snowman [Lv. 100]"
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "SnowQuest", 2)
+						elseif MyLevel == 120 or MyLevel <= 149 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5022.310546875, 31.248245239258, 4339.8891601563)
+							wait(1.5)
+							Mon = "Chief Petty Officer [Lv. 120]"
+							NaemQuest = "MarineQuest2"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 150 or MyLevel <= 174 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4835.0776367188, 717.67218017578, -2652.3461914063)
+							wait(1.5)
+							Mon = "Sky Bandit [Lv. 150]"
+							NaemQuest = "SkyQuest"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 175 or MyLevel <= 224 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4835.0776367188, 717.67218017578, -2652.3461914063)
+							wait(1.5)
+							Mon = "Dark Master [Lv. 175]"
+							NaemQuest = "SkyQuest"
+							LevelQuest = 2
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 225 or MyLevel <= 274 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1568.8129882813, 9.7575836181641, -2993.7229003906)
+							wait(1.5)
+							Mon = "Toga Warrior [Lv. 225]"
+							NaemQuest = "ColosseumQuest"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 275 or MyLevel <= 299 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1568.8129882813, 9.7575836181641, -2993.7229003906)
+							wait(1.5)
+							Mon = "Gladiator [Lv. 275]"
+							NaemQuest = "ColosseumQuest"
+							LevelQuest = 2
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 300 or MyLevel <= 329 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5325.9487304688, 8.5906744003296, 8499.58984375)
+							wait(1.5)
+							Mon = "Military Soldier [Lv. 300]"
+							NaemQuest = "MagmaQuest"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 330 or MyLevel <= 374 then -- Military Spy
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5325.9487304688, 8.5906744003296, 8499.58984375)
+							wait(1.5)
+							Mon = "Military Spy [Lv. 330]"
+							NaemQuest = "MagmaQuest"
+							LevelQuest = 2
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 375 or MyLevel <= 399 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(61124.88671875, 18.47163772583, 1576.2796630859)
+							wait(1.5)
+							Mon = "Fishman Warrior [Lv. 375]"
+							NaemQuest = "FishmanQuest"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 400 or MyLevel <= 449 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(61124.88671875, 18.47163772583, 1576.2796630859)
+							wait(1.5)
+							Mon = "Fishman Commando [Lv. 400]"
+							NaemQuest = "FishmanQuest"
+							LevelQuest = 2
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 450 or MyLevel <= 474 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4717.8950195313, 854.15832519531, -1939.4560546875)
+							wait(1.5)
+							Mon = "God's Guard [Lv. 450]"
+							NaemQuest = "SkyExp1Quest"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 475 or MyLevel <= 524 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4717.8950195313, 854.15832519531, -1939.4560546875)
+							wait(1.5)
+							Mon = "God's Guard [Lv. 450]"
+							NaemQuest = "SkyExp1Quest"
+							LevelQuest = 2
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 525 or MyLevel <= 549 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7894.9692382813, 5635.9624023438, -1414.08984375)
+							wait(1.5)
+							Mon = "Royal Squad [Lv. 525]"
+							NaemQuest = "SkyExp2Quest"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 550 or MyLevel <= 624 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7894.9692382813, 5635.9624023438, -1414.08984375)
+							wait(1.5)
+							Mon = "Royal Soldier [Lv. 550]"
+							NaemQuest = "SkyExp2Quest"
+							LevelQuest = 2
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 625 or MyLevel <= 649 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5249.2646484375, 38.501129150391, 4047.1259765625)
+							wait(1.5)
+							Mon = "Galley Pirate [Lv. 625]"
+							NaemQuest = "FountainQuest"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel >= 650 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5249.2646484375, 38.501129150391, 4047.1259765625)
+							wait(1.5)
+							Mon = "Galley Captain [Lv. 650]"
+							NaemQuest = "FountainQuest"
+							LevelQuest = 2
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						end
+					elseif game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then
+						if v.Name == Mon then
+							repeat wait()
+								game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,20)
+								v.HumanoidRootPart.Size = Vector3.new(60,30,60)
+								v.HumanoidRootPart.CanCollide = true						
+								v.HumanoidRootPart.Transparency = 0.7
+	
+							until v.Humanoid.Health <= 0 or not _G.farm
+						end
+					end
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(HVILUJ_fake_script)()
+local function EJZJBX_fake_script() -- False.LocalScript 
+	local script = Instance.new('LocalScript', False)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.farm = false
+	
+		while _G.farm do wait()
+			pcall(function()
+				local MyLevel = game.Players.LocalPlayer.Data.Level.Value
+				for i,v in pairs(game:GetService("Workspace").Enemies:GetDescendants()) do
+					if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
+						if MyLevel == 1 or MyLevel <= 9 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1055.3137207031, 16.362735748291, 1558.8653564453)
+							Mon = "Bandit [Lv. 5]"
+							wait(1.5)
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "BanditQuest1", 1)
+						elseif MyLevel == 10 or MyLevel <= 14 then 
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1616.9991455078, 36.852085113525, 144.3754119873)
+							Mon = "Monkey [Lv. 14]"
+							wait(1.5)
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "JungleQuest", 1)
+						elseif MyLevel == 15 or MyLevel <= 29 then -- Gorilla
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1616.9991455078, 36.852085113525, 144.3754119873)
+							Mon = "Gorilla [Lv. 20]"
+							wait(1.5)
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "JungleQuest", 2)
+						elseif MyLevel == 30 or MyLevel <= 39 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1151.4538574219, 4.5402708053589, 3830.6535644531)
+							wait(1.5)
+							Mon = "Pirate [Lv. 35]"
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "BuggyQuest1", 1)
+						elseif MyLevel == 40 or MyLevel <= 59 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1151.4538574219, 4.5402708053589, 3830.6535644531)
+							wait(1.5)
+							Mon = "Brute [Lv. 45]"
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "BuggyQuest1", 2)
+						elseif MyLevel == 60 or MyLevel <= 74 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(902.89453125, 6.513249874115, 4381.9609375)
+							wait(1.5)
+							Mon = "Desert Bandit [Lv. 60]"
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "DesertQuest", 1)
+						elseif MyLevel == 75 or MyLevel <= 89 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(902.89453125, 6.513249874115, 4381.9609375)
+							wait(1.5)
+							Mon = "Desert Officer [Lv. 70]"
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "DesertQuest", 2)
+						elseif MyLevel == 90 or MyLevel <= 99 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1375.642578125, 87.272789001465, -1297.5194091797)
+							wait(1.5)
+							Mon = "Snow Bandit [Lv. 90]"
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "SnowQuest", 1)
+						elseif MyLevel == 100 or MyLevel <= 119 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1375.642578125, 87.272789001465, -1297.5194091797)
+							wait(1.5)
+							Mon = "Snowman [Lv. 100]"
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", "SnowQuest", 2)
+						elseif MyLevel == 120 or MyLevel <= 149 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5022.310546875, 31.248245239258, 4339.8891601563)
+							wait(1.5)
+							Mon = "Chief Petty Officer [Lv. 120]"
+							NaemQuest = "MarineQuest2"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 150 or MyLevel <= 174 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4835.0776367188, 717.67218017578, -2652.3461914063)
+							wait(1.5)
+							Mon = "Sky Bandit [Lv. 150]"
+							NaemQuest = "SkyQuest"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 175 or MyLevel <= 224 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4835.0776367188, 717.67218017578, -2652.3461914063)
+							wait(1.5)
+							Mon = "Dark Master [Lv. 175]"
+							NaemQuest = "SkyQuest"
+							LevelQuest = 2
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 225 or MyLevel <= 274 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1568.8129882813, 9.7575836181641, -2993.7229003906)
+							wait(1.5)
+							Mon = "Toga Warrior [Lv. 225]"
+							NaemQuest = "ColosseumQuest"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 275 or MyLevel <= 299 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1568.8129882813, 9.7575836181641, -2993.7229003906)
+							wait(1.5)
+							Mon = "Gladiator [Lv. 275]"
+							NaemQuest = "ColosseumQuest"
+							LevelQuest = 2
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 300 or MyLevel <= 329 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5325.9487304688, 8.5906744003296, 8499.58984375)
+							wait(1.5)
+							Mon = "Military Soldier [Lv. 300]"
+							NaemQuest = "MagmaQuest"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 330 or MyLevel <= 374 then -- Military Spy
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5325.9487304688, 8.5906744003296, 8499.58984375)
+							wait(1.5)
+							Mon = "Military Spy [Lv. 330]"
+							NaemQuest = "MagmaQuest"
+							LevelQuest = 2
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 375 or MyLevel <= 399 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(61124.88671875, 18.47163772583, 1576.2796630859)
+							wait(1.5)
+							Mon = "Fishman Warrior [Lv. 375]"
+							NaemQuest = "FishmanQuest"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 400 or MyLevel <= 449 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(61124.88671875, 18.47163772583, 1576.2796630859)
+							wait(1.5)
+							Mon = "Fishman Commando [Lv. 400]"
+							NaemQuest = "FishmanQuest"
+							LevelQuest = 2
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 450 or MyLevel <= 474 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4717.8950195313, 854.15832519531, -1939.4560546875)
+							wait(1.5)
+							Mon = "God's Guard [Lv. 450]"
+							NaemQuest = "SkyExp1Quest"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 475 or MyLevel <= 524 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4717.8950195313, 854.15832519531, -1939.4560546875)
+							wait(1.5)
+							Mon = "God's Guard [Lv. 450]"
+							NaemQuest = "SkyExp1Quest"
+							LevelQuest = 2
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 525 or MyLevel <= 549 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7894.9692382813, 5635.9624023438, -1414.08984375)
+							wait(1.5)
+							Mon = "Royal Squad [Lv. 525]"
+							NaemQuest = "SkyExp2Quest"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 550 or MyLevel <= 624 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7894.9692382813, 5635.9624023438, -1414.08984375)
+							wait(1.5)
+							Mon = "Royal Soldier [Lv. 550]"
+							NaemQuest = "SkyExp2Quest"
+							LevelQuest = 2
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel == 625 or MyLevel <= 649 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5249.2646484375, 38.501129150391, 4047.1259765625)
+							wait(1.5)
+							Mon = "Galley Pirate [Lv. 625]"
+							NaemQuest = "FountainQuest"
+							LevelQuest = 1
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						elseif MyLevel >= 650 then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5249.2646484375, 38.501129150391, 4047.1259765625)
+							wait(1.5)
+							Mon = "Galley Captain [Lv. 650]"
+							NaemQuest = "FountainQuest"
+							LevelQuest = 2
+							game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest", NaemQuest, LevelQuest)
+						end
+					elseif game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then
+						if v.Name == Mon then
+							repeat wait()
+								game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,20)
+								v.HumanoidRootPart.Size = Vector3.new(60,30,60)
+								v.HumanoidRootPart.CanCollide = true						
+								v.HumanoidRootPart.Transparency = 0.7
+	
+							until v.Humanoid.Health <= 0 or not _G.farm
+						end
+					end
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(EJZJBX_fake_script)()
+local function YBTKCA_fake_script() -- False.LocalScript 
+	local script = Instance.new('LocalScript', False)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Visible = false
+		script.Parent.Parent.True.Visible = true
+	end)
+end
+coroutine.wrap(YBTKCA_fake_script)()
+local function IUVP_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.Fame.Visible == true then
+			script.Parent.Parent.Parent.Fame.Visible = false
+		elseif script.Parent.Parent.Parent.Fame.Visible == false then
+			script.Parent.Parent.Parent.Fame.Visible = true
+		end
+	end)
+end
+coroutine.wrap(IUVP_fake_script)()
+
 TextLabel.Text = "Auto-Farm"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true

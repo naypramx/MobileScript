@@ -140,7 +140,7 @@ UITextSizeConstraint_5.MaxTextSize = 14
 
 -- Scripts:
 
-local function NVNUN_fake_script() -- True.LocalScript 
+local function WMEYJ_fake_script() -- True.LocalScript 
 	local script = Instance.new('LocalScript', True)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -148,15 +148,15 @@ local function NVNUN_fake_script() -- True.LocalScript
 		script.Parent.Parent.False.Visible = true
 	end)
 end
-coroutine.wrap(NVNUN_fake_script)()
-local function FMLXMJQ_fake_script() -- True.LocalScript 
+coroutine.wrap(WMEYJ_fake_script)()
+local function ZDWCX_fake_script() -- True.LocalScript 
 	local script = Instance.new('LocalScript', True)
 
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		_G.farm = true
+		getgenv().autofarm = true
 	
-		while _G.farm do wait()
+		while getgenv().autofarm do wait()
 			pcall(function()
 				local MyLevel = game.Players.LocalPlayer.Data.Level.Value
 				for i,v in pairs(game:GetService("Workspace").Enemies:GetDescendants()) do
@@ -320,7 +320,7 @@ local function FMLXMJQ_fake_script() -- True.LocalScript
 								v.HumanoidRootPart.CanCollide = true						
 								v.HumanoidRootPart.Transparency = 0.7
 	
-							until v.Humanoid.Health <= 0 or not _G.farm
+							until v.Humanoid.Health <= 1 or not getgenv().autofarm
 						end
 					end
 				end
@@ -328,14 +328,14 @@ local function FMLXMJQ_fake_script() -- True.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FMLXMJQ_fake_script)()
-local function TDGRNU_fake_script() -- False.LocalScript 
+coroutine.wrap(ZDWCX_fake_script)()
+local function IFHDISP_fake_script() -- False.LocalScript 
 	local script = Instance.new('LocalScript', False)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		_G.farm = false
+		getgenv().autofarm = false
 	
-		while _G.farm do wait()
+		while getgenv().autofarm do wait()
 			pcall(function()
 				local MyLevel = game.Players.LocalPlayer.Data.Level.Value
 				for i,v in pairs(game:GetService("Workspace").Enemies:GetDescendants()) do
@@ -499,7 +499,7 @@ local function TDGRNU_fake_script() -- False.LocalScript
 								v.HumanoidRootPart.CanCollide = true						
 								v.HumanoidRootPart.Transparency = 0.7
 	
-							until v.Humanoid.Health <= 0 or not _G.farm
+							until v.Humanoid.Health <= 1 or not getgenv().autofarm
 						end
 					end
 				end
@@ -507,8 +507,8 @@ local function TDGRNU_fake_script() -- False.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TDGRNU_fake_script)()
-local function UFNT_fake_script() -- False.LocalScript 
+coroutine.wrap(IFHDISP_fake_script)()
+local function TIRFIE_fake_script() -- False.LocalScript 
 	local script = Instance.new('LocalScript', False)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -516,8 +516,8 @@ local function UFNT_fake_script() -- False.LocalScript
 		script.Parent.Parent.True.Visible = true
 	end)
 end
-coroutine.wrap(UFNT_fake_script)()
-local function HFKZ_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(TIRFIE_fake_script)()
+local function RYKXXF_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -528,4 +528,5 @@ local function HFKZ_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(HFKZ_fake_script)()
+coroutine.wrap(RYKXXF_fake_script)()
+
